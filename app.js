@@ -10,10 +10,20 @@ import { log } from 'console';
 let ridders = all_riddles();
 log('Wellcom to RIDDLE GAME:');
 const userName = input('Enter yuor name: ');
-let player = createPlayer(userName);
-for (let i = 0; i < all_riddles().length; i++) {
-  log(`\nQuestion number ${i + 1}\n`);
-  let time_second = riddleTime(() => ask_riddle(ridders[i]));
-  add_solve_time(player, time_second);
+let flag = true;
+while (flag) {
+  let player = createPlayer(userName);
+  for (let i = 0; i < all_riddles().length; i++) {
+    log(`\nQuestion number ${i + 1}\n`);
+    let time_second = riddleTime(() => ask_riddle(ridders[i]));
+    add_solve_time(player, time_second);
+  }
+  log('\nsummery', show_state(player));
+  let exit = input(
+    'If you want to play again, press Enter, and if you want to exit the game, press exit.'
+  );
+  if (exit === 'exit') {
+    flag = false;
+    log('Exit!');
+  }
 }
-log('\nsummery', show_state(player));
