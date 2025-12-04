@@ -1,0 +1,26 @@
+{
+  "name": "riddle_game",
+  "version": "1.0.0",
+  "description": "\"# basics_test_riddles\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriKodcode/basics_test_riddles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AriKodcode/basics_test_riddles/issues"
+  },
+  "homepage": "https://github.com/AriKodcode/basics_test_riddles#readme",
+  "dependencies": {
+    "analiza-sync": "^1.0.1",
+    "date-now": "^1.0.1",
+    "performance-now": "^2.1.0"
+  }
+}
