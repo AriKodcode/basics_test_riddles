@@ -4,7 +4,7 @@ export default function show_state(player) {
     sum_time += player['times'][i];
   }
   const avg = sum_time / player['times'].length;
-  return `Dreat job ${player['name']}!
+  return `Great job ${player['name']}!
   Total time: ${sum_time} second
     Average per riddle: ${avg} second`;
 }
