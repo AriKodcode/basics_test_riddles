@@ -18,7 +18,7 @@ while (flag) {
     let time_second = riddleTime(() => ask_riddle(ridders[i]));
     add_solve_time(player, time_second);
   }
-  log('\nsummery', show_state(player));
+  log('\nsummery\n', show_state(player));
   let exit = input(
     'If you want to play again, press Enter, and if you want to exit the game, press exit.'
   );
